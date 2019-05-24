@@ -311,3 +311,12 @@ if (enableBgDetail) {
     }
 }
 
+function printCanvas()  
+{  
+    let dataUrl = document.getElementById('canvas').toDataURL();
+    let windowContent = '<img src="' + dataUrl + '">';
+
+    document.body.innerHTML = windowContent
+}
+
+printCanvas()
