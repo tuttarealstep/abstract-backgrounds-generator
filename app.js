@@ -120,14 +120,6 @@ let bgMode = parseInt(getUrlParameters().get("bgMode")) || getRandomInt(0, 3)
  */
  let enableBgDetail = (getUrlParameters().get("details") ? (getUrlParameters().get("details") == 1 ? true : false) : true)
 
-
-/**
- * Detail Mode:
- * 0 - no detail
- * 1 - radial 
- * 2 - cirlce
- */
-let detailMode = parseInt(getUrlParameters().get("detailMode")) || getRandomInt(0, 3)
 let numberOfDetails = parseInt(getUrlParameters().get("nDetails")) || 3
 
 switch (bgMode) {
@@ -226,6 +218,15 @@ switch (bgMode) {
 
 if (enableBgDetail) {
     for (let j = 0; j < numberOfDetails; j++) {
+
+        /**
+         * Detail Mode:
+         * 0 - no detail
+         * 1 - radial 
+         * 2 - cirlce
+         */
+        let detailMode = parseInt(getUrlParameters().get("detailMode")) || getRandomInt(0, 3)
+
         switch (detailMode) {
             case 0:
                 //null
