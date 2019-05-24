@@ -6,6 +6,8 @@ Open [Abstract backgrounds generator](https://tuttarealstep.github.io/abstract-b
 
 ### If you want customize or configure
 + You can user custom url parameters
+  + **w**: width (Default: window width)
+  + **h**: height (Default: window height)
   + **bgMode**: background settings (Default: random number from 0 to 2)
     + 0 = linear gradient
     + 1 = radial gradient
@@ -18,4 +20,7 @@ Open [Abstract backgrounds generator](https://tuttarealstep.github.io/abstract-b
     + 1 = radial
     + 2 = linear
   + **nDetails**: number of details (Default: 3)
+ 
+  *Example*:
+  https://tuttarealstep.github.io/abstract-backgrounds-generator/?w=100&h=100
     
